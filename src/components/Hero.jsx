@@ -6,10 +6,14 @@ export function Hero() {
 
   return (
     <header className="hero" role="banner">
-      <div className="hero-bg" aria-hidden="true" />
+      <div
+        className="hero-bg"
+        aria-hidden="true"
+        style={{ backgroundImage: `url(${import.meta.env.BASE_URL}Drinks-and-development-hero.jpg)` }}
+      />
       <div className="hero-inner">
         <img
-          src="/Drinks-and-development-logo.jpg"
+          src={`${import.meta.env.BASE_URL}Drinks-and-development-logo.jpg`}
           alt="Drinks and Development"
           className="hero-logo animate-hero-logo"
         />

@@ -23,7 +23,7 @@
   --text-muted: var(--color-muted);
 
   /* Spacing & layout */
-  --section-padding: clamp(2.5rem, 6vw, 4rem);
+  --section-padding: clamp(3.5rem, 8vw, 5.5rem);
   --content-width: min(90vw, 960px);
   --content-width-wide: min(92vw, 1200px);
 
@@ -399,7 +399,7 @@ a:hover {
 .hero-bg {
   position: absolute;
   inset: 0;
-  background: url('/Drinks-and-development-hero.jpg') center / cover no-repeat;
+  background: center / cover no-repeat;
 }
 
 .hero-bg::after {
@@ -740,4 +740,34 @@ a:hover {
   font-size: 0.95rem;
   color: var(--text-secondary);
   line-height: 1.5;
+}
+
+/* ===== Image banners (between sections) ===== */
+.image-banner {
+  padding: var(--section-padding) 0;
+  background: var(--color-cream);
+}
+
+.image-banner-inner {
+  width: var(--content-width-wide);
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.image-banner-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  object-fit: cover;
+  max-height: 420px;
+}
+
+.image-banner-caption {
+  margin: 0.75rem 0 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  text-align: center;
 }

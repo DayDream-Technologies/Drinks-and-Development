@@ -14,7 +14,7 @@ export function Header() {
       <div className="header-inner">
         <Link to="/" className="header-logo-link" aria-label="Drinks and Development home">
           <img
-            src="/Drinks-and-development-logo.jpg"
+            src={`${import.meta.env.BASE_URL}Drinks-and-development-logo.jpg`}
             alt=""
             className="header-logo"
           />

@@ -9,7 +9,7 @@ const PLACEHOLDER_EVENTS = [
     title: 'Summer Meetup 2024',
     date: 'August 15, 2024',
     location: 'Grand Rapids',
-    image: '/Drinks-and-development-hero.jpg',
+    image: 'Drinks-and-development-hero.jpg',
     excerpt: 'A great evening of networking and conversation with local professionals.',
   },
   {
@@ -17,7 +17,7 @@ const PLACEHOLDER_EVENTS = [
     title: 'Spring Happy Hour',
     date: 'April 22, 2024',
     location: 'Grand Rapids',
-    image: '/Drinks-and-development-logo.jpg',
+    image: 'Drinks-and-development-logo.jpg',
     excerpt: 'Casual drinks and conversation. New faces always welcome.',
   },
   {
@@ -25,7 +25,7 @@ const PLACEHOLDER_EVENTS = [
     title: 'Winter Social',
     date: 'January 10, 2024',
     location: 'Grand Rapids',
-    image: '/Drinks-and-development-hero.jpg',
+    image: 'Drinks-and-development-hero.jpg',
     excerpt: 'Kicked off the year with good company and warm drinks.',
   },
 ]
@@ -54,7 +54,7 @@ export function PastEventsPage() {
                 <ScrollReveal variant="up" delay={i * 80} className="past-event-card">
                   <div className="past-event-card-image-wrap">
                     <img
-                      src={event.image}
+                      src={`${import.meta.env.BASE_URL}${event.image}`}
                       alt=""
                       className="past-event-card-image"
                     />
