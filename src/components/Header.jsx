@@ -2,12 +2,17 @@ import { Link, useLocation } from 'react-router-dom'
 import { content } from '../content'
 
 const nav = [
-  { path: '/', label: 'Home' },
   { path: '/past-events', label: 'Past Events' },
 ]
 
+function scrollToEvents(e) {
+  e?.preventDefault()
+  document.getElementById('events')?.scrollIntoView({ behavior: 'smooth' })
+}
+
 export function Header() {
   const location = useLocation()
+  const isHome = location.pathname === '/'
 
   return (
     <header className="site-header">
@@ -32,6 +37,21 @@ export function Header() {
                 </Link>
               </li>
             ))}
+            <li>
+              {isHome ? (
+                <a
+                  href="#events"
+                  className="header-nav-link header-nav-link--cta"
+                  onClick={scrollToEvents}
+                >
+                  Upcoming Events
+                </a>
+              ) : (
+                <Link to="/#events" className="header-nav-link header-nav-link--cta">
+                  Upcoming Events
+                </Link>
+              )}
+            </li>
           </ul>
         </nav>
       </div>

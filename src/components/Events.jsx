@@ -31,7 +31,18 @@ export function Events() {
           </ScrollReveal>
         ) : (
           <div className="events-placeholder">
-            <p>Add your Google Calendar ID in <code>src/config.js</code> to show upcoming events here.</p>
+            <p className="events-coming-soon">
+              More Drinks &amp; Development events are coming soon! In the meantime, check out more
+              networking events in Grand Rapids
+            </p>
+            <a
+              href="https://www.daydreamtechnologies.net/gr-events.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-primary events-cta"
+            >
+              View GR networking events
+            </a>
           </div>
         )}
       </ScrollReveal>

@@ -87,6 +87,35 @@ body::after {
   z-index: 1;
 }
 
+/* ===== Scrollbar styling ===== */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-amber-light) var(--color-cream);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-amber-light);
+  border-radius: 10px;
+  border: 2px solid var(--color-cream);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-amber);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: var(--color-amber-dark);
+}
+
 /* Section layout */
 section {
   padding: var(--section-padding) 0;
@@ -264,6 +293,28 @@ a:hover {
   transform: translateX(0);
 }
 
+@keyframes headerReveal {
+  from {
+    opacity: 0;
+    transform: translateY(-0.75rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes footerReveal {
+  from {
+    opacity: 0;
+    transform: translateY(0.75rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* ===== Section background effects ===== */
 .section-bg {
   position: relative;
@@ -312,6 +363,7 @@ a:hover {
   z-index: 100;
   background: var(--color-warm-white);
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  animation: headerReveal 0.5s var(--animate-ease) both;
 }
 
 .header-inner {
@@ -382,6 +434,17 @@ a:hover {
 }
 
 .header-nav-link.is-active:hover {
+  background: var(--color-amber-dark);
+  color: var(--color-warm-white);
+  text-decoration: none;
+}
+
+.header-nav-link--cta {
+  background: var(--color-amber);
+  color: var(--color-warm-white);
+}
+
+.header-nav-link--cta:hover {
   background: var(--color-amber-dark);
   color: var(--color-warm-white);
   text-decoration: none;
@@ -516,6 +579,29 @@ a:hover {
   color: var(--text-muted);
 }
 
+.events-coming-soon {
+  margin: 0 0 1.25rem;
+  max-width: 42ch;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.events-cta-link {
+  color: var(--color-amber-dark);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.events-cta-link:hover {
+  color: var(--color-amber);
+}
+
+.events-cta {
+  display: inline-block;
+  text-decoration: none;
+}
+
 .events-placeholder code {
   font-size: 0.9em;
   background: var(--color-cream);
@@ -616,6 +702,7 @@ a:hover {
   color: var(--color-warm-white);
   padding: var(--section-padding) 1rem;
   text-align: center;
+  animation: footerReveal 0.55s var(--animate-ease) 0.12s both;
 }
 
 .footer-inner {
