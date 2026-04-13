@@ -13,7 +13,7 @@ export function Hero() {
       />
       <div className="hero-inner">
         <img
-          src={`${import.meta.env.BASE_URL}Drinks-and-development-logo.jpg`}
+          src={`${import.meta.env.BASE_URL}Drinks-and-development-logo-icon.JPG`}
           alt="Drinks and Development"
           className="hero-logo animate-hero-logo"
         />
