@@ -36,7 +36,7 @@ export const content = {
     location: 'Grand Rapids, MI',
     copyright: 'Drinks and Development',
     developedBy: 'Site developed by',
-    developerName: 'Daydream Technologies',
+    developerName: 'DayDream Technologies',
     developerUrl: 'https://daydreamtechnologies.net',
   },
   pastEvents: {
