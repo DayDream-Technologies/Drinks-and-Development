@@ -43,4 +43,55 @@ export const content = {
     title: 'Past Events',
     intro: 'Highlights from our previous meetups. Add your own event photos and details here.',
   },
+  participants: {
+    title: 'Active Participants',
+    intro:
+      'These organizations regularly attend Drinks and Development meetups in Grand Rapids.',
+    visitWebsite: 'Visit website',
+    teaserTitle: 'Active Participants',
+    teaserIntro: 'Local organizations that show up, connect, and keep coming back.',
+    teaserCta: 'Meet our participants',
+    organizations: [
+      {
+        id: 'cognition-daily',
+        name: 'Cognition Daily',
+        tagline:
+          'Improving cognitive, neurological, and psychological health through accessible, evidence-based digital programs.',
+        website: 'https://cognitiondaily.net',
+        logo: 'logos/cognition-daily-logo.png',
+      },
+      {
+        id: 'streams-of-hope',
+        name: 'Streams of Hope',
+        tagline:
+          'Cultivating a healthy, vibrant neighborhood through food, education, and community connection.',
+        website: 'https://streamsofhope.org',
+        logo: 'logos/streams-of-hope-logo.png',
+      },
+      {
+        id: 'sus-manos-gleaners',
+        name: 'Sus Manos Gleaners',
+        tagline: 'Surplus Food for Starving People',
+        website: 'https://smgleaners.org',
+        logo: 'logos/sus-manos-gleaners-logo.png',
+      },
+      {
+        id: 'the-fundraisers-collective',
+        name: 'The Fundraisers Collective',
+        tagline:
+          'Connecting, equipping, and elevating nonprofit professionals to grow fundraising impact.',
+        website: 'https://thefundraiserscollective.com',
+        logo: 'logos/the-fundraisers-collective-logo.png',
+      },
+      {
+        id: 'code-on-wheels',
+        name: 'Code on Wheels',
+        tagline: 'Bringing technology education directly to our communities.',
+        about:
+          'Code on Wheels is a West Michigan nonprofit that brings hands-on technology education directly to youth in their communities. Through partnerships with schools and community organizations, we provide coding classes, workshops, camps, and after-school programs that give students opportunities to explore technology and build new skills.',
+        website: 'https://codeonwheels.org',
+        logo: 'logos/code-on-wheels-logo.png',
+      },
+    ],
+  },
 }

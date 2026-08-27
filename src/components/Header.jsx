@@ -2,6 +2,7 @@ import { Link, useLocation } from 'react-router-dom'
 import { content } from '../content'
 
 const nav = [
+  { path: '/participants', label: 'Active Participants' },
   { path: '/past-events', label: 'Past Events' },
 ]
 

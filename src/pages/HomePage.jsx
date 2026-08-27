@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 import { Hero } from '../components/Hero'
 import { About } from '../components/About'
+import { ParticipantsTeaser } from '../components/ParticipantsTeaser'
 import { Events } from '../components/Events'
 // import { Signup } from '../components/Signup' // TODO: implement later
 import { ImageBanner } from '../components/ImageBanner'
@@ -31,6 +32,7 @@ export function HomePage() {
       <main>
         {/* <ImageBanner src={BANNER_IMAGES.community} alt="" /> */}
         <About />
+        <ParticipantsTeaser />
         <ImageBanner src={MEETING_IMAGE} alt="A Drinks and Development meetup" caption="A Drinks and Development meetup — networking over drinks in Grand Rapids." />
         <Events />
         {/* <ImageBanner src={BANNER_IMAGES.networking} alt="" /> */}

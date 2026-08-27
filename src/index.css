@@ -356,6 +356,14 @@ a:hover {
   );
 }
 
+.participants-teaser.section-bg::before {
+  background: radial-gradient(
+    ellipse 70% 50% at 15% 30%,
+    rgba(193, 127, 58, 0.07) 0%,
+    transparent 55%
+  );
+}
+
 /* ===== Site header / nav ===== */
 .site-header {
   position: sticky;
@@ -411,6 +419,7 @@ a:hover {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   gap: 0.5rem;
 }
 
@@ -766,6 +775,12 @@ a:hover {
   margin-top: 0.5rem;
 }
 
+@media (max-width: 768px) {
+  .past-events-back {
+    display: none;
+  }
+}
+
 .past-events-grid-section {
   padding: var(--section-padding) 0;
   background: var(--color-cream);
@@ -860,4 +875,183 @@ a:hover {
   font-size: 0.9rem;
   color: var(--text-muted);
   text-align: center;
+}
+
+/* ===== Active Participants page ===== */
+.participants-page {
+  min-height: 60vh;
+}
+
+.participants-intro {
+  padding: var(--section-padding) 0;
+  background: var(--color-warm-white);
+}
+
+.participants-title {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.participants-intro-text {
+  margin: 0 0 1rem;
+  color: var(--text-secondary);
+}
+
+.participants-back {
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .participants-back {
+    display: none;
+  }
+}
+
+.participants-grid-section {
+  padding: var(--section-padding) 0;
+  background: var(--color-cream);
+}
+
+.participants-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.participants-grid > li,
+.participants-grid .scroll-reveal {
+  height: 100%;
+}
+
+.participant-card {
+  background: var(--color-warm-white);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s var(--animate-ease), box-shadow 0.3s;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.participant-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+}
+
+.participant-card-logo-wrap {
+  height: 140px;
+  overflow: hidden;
+  background: var(--color-cream);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.participant-card-logo-wrap:has(.participant-card-logo) {
+  background: var(--color-amber-light);
+}
+
+.participant-card-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 0.65rem;
+  transition: transform 0.4s var(--animate-ease);
+}
+
+.participant-card:hover .participant-card-logo {
+  transform: scale(1.05);
+}
+
+.participant-card-lettermark {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: 0.04em;
+  color: var(--color-amber-dark);
+}
+
+.participant-card-body {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.participant-card-title {
+  margin: 0 0 0.35rem;
+  font-size: 1.2rem;
+}
+
+.participant-card-tagline {
+  margin: 0 0 0.75rem;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.participant-card-about {
+  margin: 0 0 1rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.participant-card-tagline:last-of-type {
+  margin-bottom: 1rem;
+}
+
+.participant-card-link {
+  margin-top: auto;
+  font-weight: 600;
+  color: var(--color-amber-dark);
+}
+
+.participant-card-link:hover {
+  color: var(--color-amber);
+}
+
+/* ===== Homepage participants teaser ===== */
+.participants-teaser {
+  padding: var(--section-padding) 0;
+  background: var(--color-cream);
+}
+
+.participants-teaser-title {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.participants-teaser-intro {
+  margin: 0 0 1.25rem;
+  color: var(--text-secondary);
+}
+
+.participants-teaser-list {
+  list-style: none;
+  margin: 0 0 1.5rem;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.participants-teaser-item {
+  display: inline-block;
+  padding: 0.4rem 0.9rem;
+  border-radius: 2rem;
+  background: var(--color-warm-white);
+  color: var(--text-secondary);
+  font-weight: 600;
+  font-size: 0.95rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.participants-teaser-cta {
+  display: inline-block;
 }
