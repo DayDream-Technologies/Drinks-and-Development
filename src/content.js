@@ -92,6 +92,15 @@ export const content = {
         website: 'https://codeonwheels.org',
         logo: 'logos/code-on-wheels-logo.png',
       },
+      {
+        id: 'revive-and-thrive',
+        name: 'Revive & Thrive',
+        tagline: 'Nourishing the community, one meal at a time.',
+        about:
+          'Revive & Thrive, a Food is Medicine provider, delivers no-cost, medically supportive meals to those facing cancer, diabetes, and heart disease while empowering the next generation. We combine nutritious, chef-prepared meals with Registered Dietitian services, nutrition education, a Teen Chef Program, and meaningful community connection.',
+        website: 'https://reviveandthrive.org',
+        logo: 'logos/revive-and-thrive-logo.png',
+      },
     ],
   },
 }
