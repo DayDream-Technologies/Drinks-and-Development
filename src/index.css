@@ -1028,30 +1028,99 @@ a:hover {
 }
 
 .participants-teaser-intro {
-  margin: 0 0 1.25rem;
+  margin: 0 0 1.5rem;
   color: var(--text-secondary);
+}
+
+.participants-teaser-marquee {
+  overflow: hidden;
+  width: 100%;
+  margin: 0 0 1.75rem;
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 6%,
+    #000 94%,
+    transparent
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 6%,
+    #000 94%,
+    transparent
+  );
+}
+
+.participants-teaser-track {
+  display: flex;
+  width: max-content;
+  animation: participants-marquee 40s linear infinite;
+}
+
+.participants-teaser-marquee:hover .participants-teaser-track,
+.participants-teaser-marquee:focus-within .participants-teaser-track {
+  animation-play-state: paused;
 }
 
 .participants-teaser-list {
   list-style: none;
-  margin: 0 0 1.5rem;
-  padding: 0;
+  margin: 0;
+  padding: 0.25rem 0.75rem 0.25rem 0;
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
+  flex-wrap: nowrap;
+  gap: 0.75rem;
 }
 
 .participants-teaser-item {
-  display: inline-block;
-  padding: 0.4rem 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-shrink: 0;
+  padding: 0.5rem 1rem 0.5rem 0.55rem;
   border-radius: 2rem;
   background: var(--color-warm-white);
   color: var(--text-secondary);
   font-weight: 600;
   font-size: 0.95rem;
+  white-space: nowrap;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.participants-teaser-logo {
+  width: 2.25rem;
+  height: 2.25rem;
+  object-fit: contain;
+  flex-shrink: 0;
+  border-radius: 0.4rem;
+  background: var(--color-amber-light);
 }
 
 .participants-teaser-cta {
   display: inline-block;
+}
+
+@keyframes participants-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .participants-teaser-track {
+    animation: none;
+  }
+
+  .participants-teaser-marquee {
+    overflow-x: auto;
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+
+  .participants-teaser-list[aria-hidden='true'] {
+    display: none;
+  }
 }

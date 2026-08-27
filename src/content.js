@@ -101,6 +101,15 @@ export const content = {
         website: 'https://reviveandthrive.org',
         logo: 'logos/revive-and-thrive-logo.png',
       },
+      {
+        id: 'startup-garage',
+        name: 'Startup Garage',
+        tagline: 'Expanding Christ-Centered Entrepreneurship',
+        about:
+          'Startup Garage is a nonprofit dedicated to developing redemptive entrepreneurs by equipping early-stage, faith-driven founders through a clear pathway of events, intentional connections, and our small groups called The Forge.',
+        website: 'https://www.startupgarage.org/',
+        logo: 'logos/startup-garage-logo.png',
+      },
     ],
   },
 }
