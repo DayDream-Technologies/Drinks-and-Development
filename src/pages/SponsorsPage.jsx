@@ -16,11 +16,10 @@ function orgInitials(name) {
   return letters || name.slice(0, 2).toUpperCase()
 }
 
-export function ParticipantsPage() {
-  const copy = content.participants || {}
-  const title = copy.title ?? 'Active Participants'
-  const intro =
-    copy.intro ?? 'These organizations regularly attend Drinks and Development meetups in Grand Rapids.'
+export function SponsorsPage() {
+  const copy = content.sponsors || {}
+  const title = copy.title ?? 'Sponsors'
+  const intro = copy.intro ?? 'Organizations that support Drinks and Development.'
   const visitWebsite = copy.visitWebsite ?? 'Visit website'
   const organizations = copy.organizations ?? []
 

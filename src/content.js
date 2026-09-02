@@ -110,6 +110,32 @@ export const content = {
         website: 'https://www.startupgarage.org/',
         logo: 'logos/startup-garage-logo.png',
       },
+      {
+        id: 'upcycle-bikes',
+        name: 'Upcycle Bikes',
+        tagline: 'Old bike. New life.',
+        about:
+          'Upcycle Bikes strengthens independence, opportunity, and connection through affordable and accessible transportation by providing refurbished adult bikes at no cost to individuals with financial constraints.',
+        website: 'https://www.upcyclebikes.org',
+        logo: 'logos/upcycle-bikes-logo.png',
+      },
+    ],
+  },
+  sponsors: {
+    title: 'Sponsors',
+    intro: 'Organizations that support Drinks and Development and the community around it.',
+    visitWebsite: 'Visit website',
+    organizations: [
+      {
+        id: 'first-national-bank-of-michigan',
+        name: 'First National Bank of Michigan',
+        about: [
+          'First National Bank of Michigan is privately owned by area investors who value local decision-making and the ability to help our communities and individuals grow and prosper.',
+          'Our employees and directors have been involved in local banking for many years and are a vital part of the community, both professionally and personally.',
+        ],
+        website: 'https://fnbmichigan.bank',
+        logo: 'logos/first-national-bank-of-michigan-logo.png',
+      },
     ],
   },
 }

@@ -3,6 +3,7 @@ import { content } from '../content'
 
 const nav = [
   { path: '/participants', label: 'Active Participants' },
+  { path: '/sponsors', label: 'Sponsors' },
   { path: '/past-events', label: 'Past Events' },
 ]
 
