@@ -2,7 +2,7 @@
  * Site configuration. Update these values without touching component code.
  */
 
-/** LinkedIn group URL – used for "Join our LinkedIn group" CTA */
+/** LinkedIn group URL - used for "Join our LinkedIn group" CTA */
 export const LINKEDIN_GROUP_URL = 'https://www.linkedin.com/groups/14488620/'
 
 /**

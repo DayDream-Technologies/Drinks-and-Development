@@ -2,6 +2,7 @@ import { Link, useLocation } from 'react-router-dom'
 import { content } from '../content'
 
 const nav = [
+  { path: '/team', label: 'Our Team' },
   { path: '/participants', label: 'Active Participants' },
   { path: '/sponsors', label: 'Sponsors' },
   { path: '/past-events', label: 'Past Events' },
@@ -43,13 +44,13 @@ export function Header() {
               {isHome ? (
                 <a
                   href="#events"
-                  className="header-nav-link header-nav-link--cta"
+                  className="header-nav-link"
                   onClick={scrollToEvents}
                 >
                   Upcoming Events
                 </a>
               ) : (
-                <Link to="/#events" className="header-nav-link header-nav-link--cta">
+                <Link to="/#events" className="header-nav-link">
                   Upcoming Events
                 </Link>
               )}
