@@ -117,6 +117,18 @@ export const content = {
         image: 'events/ganders.png',
         sponsors: [],
       },
+      {
+        id: 'bamboo-grand-rapids',
+        venueId: 'bamboo-grand-rapids',
+        location: 'Bamboo Grand Rapids',
+        address: '2 W Fulton St, Grand Rapids, MI 49503',
+        lat: 42.9629482,
+        lng: -85.6682936,
+        image: 'events/bamboo-grand-rapids.png',
+        sponsors: [
+          { name: 'The Catalyst Collective', href: 'https://www.theintentionalcatalyst.com/catalystcollective' },
+        ],
+      },
     ],
   },
   participants: {
@@ -194,6 +206,14 @@ export const content = {
           'Upcycle Bikes strengthens independence, opportunity, and connection through affordable and accessible transportation by providing refurbished adult bikes at no cost to individuals with financial constraints.',
         website: 'https://www.upcyclebikes.org',
         logo: 'logos/upcycle-bikes-logo.png',
+      },
+      {
+        id: 'the-other-way-ministries',
+        name: 'The Other Way Ministries',
+        tagline:
+          'We walk alongside our Westside neighbors, extending the love of Christ as we support and empower individuals and families - spiritually, relationally, and economically - to build a flourishing community together.',
+        website: 'https://theotherway.org',
+        logo: 'logos/the-other-way-ministries-logo.png',
       },
     ],
   },
