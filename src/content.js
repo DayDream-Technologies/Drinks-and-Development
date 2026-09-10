@@ -238,7 +238,7 @@ export const content = {
           'Founder, Drinks and Development | Co-Founder, The Fundraisers Collective | Director of Personal Giving, Samaritas',
         about: [
           'Alex Wilson is passionate about connecting others and serving the community. She founded Drinks and Development, a free networking group for fundraisers in Grand Rapids, and co-founded The Fundraisers Collective.',
-          'She is Director of Personal Giving at Samaritas and a Grand Rapids Rotarian, serving on boards and committees across West Michigan including the GRFD Fire Prevention Foundation, Leading Ladies, Aquinas College Alumni Leadership Council, and Women of Habitat Kent.',
+          'She is a Grand Rapids Rotarian, serving on boards and committees across West Michigan including the GRFD Fire Prevention Foundation, Leading Ladies, Aquinas College Alumni Leadership Council, and Women of Habitat Kent.',
         ],
         linkedin: 'https://www.linkedin.com/in/alexandra-wilson-b41186a5/',
         photo: 'team/alex-wilson.png',
