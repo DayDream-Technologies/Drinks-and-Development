@@ -17,7 +17,22 @@ export const content = {
   },
   events: {
     title: 'Upcoming events',
-    description: 'We keep our meetups on the calendar below. Add it to yours or stop by when we’re next meeting.',
+    description: 'Join us for the next meetup. Details are below.',
+    hostedBy: 'Hosted and sponsored by',
+    items: [
+      {
+        id: 'january-2027-cs-erickson',
+        date: 'Wednesday, January 13, 2027',
+        time: '4:30–6:00pm',
+        location: 'CS Erickson',
+        address: '719 Century Ave SW, Building A, Grand Rapids, MI 49503',
+        mapUrl:
+          'https://www.google.com/maps/search/?api=1&query=719+Century+Ave+SW%2C+Building+A%2C+Grand+Rapids%2C+MI+49503',
+        logo: 'logos/cs-erickson-logo.png',
+        logoPlate: 'dark',
+        host: { name: 'CS Erickson', to: '/sponsors' },
+      },
+    ],
   },
   signup: {
     title: 'Stay in the loop',
@@ -222,6 +237,18 @@ export const content = {
     intro: 'Organizations that support Drinks and Development and the community around it.',
     visitWebsite: 'Visit website',
     organizations: [
+      {
+        id: 'cs-erickson',
+        name: 'CS Erickson',
+        tagline: 'Powerful Connections.',
+        about: [
+          'CS Erickson is a West Michigan commercial and industrial electrical contractor. They design and install electrical, low voltage, and technology systems for businesses across the region.',
+          'They are hosting and sponsoring the January 13, 2027 Drinks and Development meetup at their Grand Rapids office.',
+        ],
+        website: 'https://cserickson.com/',
+        logo: 'logos/cs-erickson-logo.png',
+        logoPlate: 'dark',
+      },
       {
         id: 'first-national-bank-of-michigan',
         name: 'First National Bank of Michigan',

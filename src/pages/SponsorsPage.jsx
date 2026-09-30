@@ -40,7 +40,9 @@ export function SponsorsPage() {
             {organizations.map((org, i) => (
               <li key={org.id}>
                 <ScrollReveal variant="up" delay={i * 80} className="participant-card">
-                  <div className="participant-card-logo-wrap">
+                  <div
+                    className={`participant-card-logo-wrap${org.logoPlate === 'dark' ? ' logo-plate-dark' : ''}`}
+                  >
                     {org.logo ? (
                       <img
                         src={`${import.meta.env.BASE_URL}${org.logo}`}
