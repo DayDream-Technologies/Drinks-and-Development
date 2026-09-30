@@ -21,6 +21,18 @@ export const content = {
     hostedBy: 'Hosted and sponsored by',
     items: [
       {
+        id: 'october-2026-grand-rapids-tech',
+        date: 'Wednesday, October 14, 2026',
+        time: '4:30–6:00pm',
+        location: 'Grand Rapids Tech',
+        address: '1624 Woodworth St NE, Floor 2, Grand Rapids, MI 49525',
+        mapUrl:
+          'https://www.google.com/maps/search/?api=1&query=1624+Woodworth+St+NE%2C+Floor+2%2C+Grand+Rapids%2C+MI+49525',
+        logo: 'logos/grand-rapids-tech-logo.png',
+        logoPlate: 'dark',
+        host: { name: 'Grand Rapids Tech', to: '/sponsors' },
+      },
+      {
         id: 'january-2027-cs-erickson',
         date: 'Wednesday, January 13, 2027',
         time: '4:30–6:00pm',
@@ -237,6 +249,18 @@ export const content = {
     intro: 'Organizations that support Drinks and Development and the community around it.',
     visitWebsite: 'Visit website',
     organizations: [
+      {
+        id: 'grand-rapids-tech',
+        name: 'Grand Rapids Tech',
+        tagline: 'Everything tech, marketing, and security.',
+        about: [
+          'Grand Rapids Tech is a Grand Rapids business technology company. They provide managed IT, cybersecurity, marketing, and related services for organizations across West Michigan.',
+          'They are hosting and sponsoring the October 14, 2026 Drinks and Development meetup at their headquarters.',
+        ],
+        website: 'https://www.grandrapids.tech/',
+        logo: 'logos/grand-rapids-tech-logo.png',
+        logoPlate: 'dark',
+      },
       {
         id: 'cs-erickson',
         name: 'CS Erickson',
